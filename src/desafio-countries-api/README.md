@@ -4,11 +4,15 @@ Os desafios 1, 2 e 3 são interligados, resolver um irá ajudar na resolução d
 
 # Desafio 1
 
-1. Crie uma função de ordenação alfabética. Essa função deve receber uma lista de objetos e uma property que deve ditar qual será o campo a ser considerado. Abaixo você pode observar a assinatura padrão da função (sinta-se a vontade para alterar da forma que achar melhor)
+1. Crie uma função de ordenação alfabética. Essa função deve receber uma lista de objetos quaisquer e uma property que deve ditar qual será o campo a ser considerado. Abaixo você pode observar a assinatura padrão da função (sinta-se a vontade para alterar da forma que achar melhor)
 
 ```typescript
-type Sort = (list:any, key: string) => any[];
+type Sort = (list: any, key: string) => any[];
 ```
+
+## Especificacões
+
+- Essa função deverá trabalhar com generics e a key deverá ser uma chave do generics recebido da lista.
 
 # Desafio 2
 
@@ -24,6 +28,7 @@ Para facilitar, o output desse request está em `src/mocks/countries.json` e seu
 2. `GET /` retorna todos os países, podendo usar a queryString `name=string` para filtrar nomes de países
 3. Deve-se aplicar paginação em `GET /` utilizando `page` e `offset` como parâmetros
 4. `GET /{name}` retorna o país dado o seu `name.common`
+5. Deverá ser utilizado o express para a implementação do endpoint
 
 # Bônus de implementação
 
