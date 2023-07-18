@@ -41,8 +41,8 @@ servidor local do teste.
 # Desafio 3
 
 1. Dado o que foi feito, criar serviço que será chamado por um controller do express
-2. Retornar todos os países, podendo usar a queryString `fields[]` para exibir quais serão os campos informados
-3. Deve-se aplicar paginação em utilizando `page` e `pageSize` como parâmetros
+2. Retornar todos os países, podendo usar a queryString `fields[]` para exibir quais serão os campos retornados
+3. Deve-se aplicar paginação em memória, utilizando `page` e `pageSize` como parâmetros
 4. O retorno da sua função deverá ser:
 
 ```typescript
