@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { countriesService, getCountries, sort } from "../src/desafio-countries-api/countries";
+import {Country} from "../src/mocks/countries.type";
 
 const test = it.concurrent;
 
@@ -21,7 +22,9 @@ describe("Should test countries.ts", () => {
 
   test("Should test request to countries API", async () => {
     const response = await getCountries();
-    console.log(response[response.length - 1]);
+    console.log(JSON.stringify(response, null, 4));
+    expect(Array.isArray(response)).toBe(true);
+    expect(response.find((x: Country) => x.name.common === "Brazil")).toBeTruthy();
   });
 
   test("Should paginate", async () => {
