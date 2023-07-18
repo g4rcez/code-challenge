@@ -16,7 +16,7 @@
     "lib": ["ESNext"],
     "module": "NodeNext",
     "noImplicitAny": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "noPropertyAccessFromIndexSignature": false,
     "rootDirs": ["src", "tests"],
     "strict": true,
     "strictBindCallApply": true,
